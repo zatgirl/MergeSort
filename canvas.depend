@@ -1,0 +1,507 @@
+# depslib dependency file v1.0
+1589222603 source:d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1589222948 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"Vector2.h"
+
+1426372440 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1437579942 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426372440 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1582231017 source:d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\main_cpp.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"Bola.h"
+	"Relogio.h"
+	"Botao.h"
+
+1589214882 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\bola.h
+	"gl_canvas2d.h"
+
+1193164156 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\relogio.h
+	"gl_canvas2d.h"
+
+1589214891 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\botao.h
+	"gl_canvas2d.h"
+
+1589218349 source:d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\relogio.cpp
+	"Relogio.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1589222628 source:d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"Bola.h"
+	"Relogio.h"
+	"Botao.h"
+
+1589217858 d:\ufsm\disciplinas\computacao grafica\demos\gl_1_canvasglut\src\vector2.h
+
+1595010925 source:d:\ufsm\disciplinas\logica e algoritmo\programas\gl_1_canvasglut\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1595010872 d:\ufsm\disciplinas\logica e algoritmo\programas\gl_1_canvasglut\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1426372440 d:\ufsm\disciplinas\logica e algoritmo\programas\gl_1_canvasglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1437579942 d:\ufsm\disciplinas\logica e algoritmo\programas\gl_1_canvasglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426372440 d:\ufsm\disciplinas\logica e algoritmo\programas\gl_1_canvasglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1589217858 d:\ufsm\disciplinas\logica e algoritmo\programas\gl_1_canvasglut\src\vector2.h
+
+1589218349 source:d:\ufsm\disciplinas\logica e algoritmo\programas\gl_1_canvasglut\src\relogio.cpp
+	"Relogio.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1193164156 d:\ufsm\disciplinas\logica e algoritmo\programas\gl_1_canvasglut\src\relogio.h
+	"gl_canvas2d.h"
+
+1595011154 source:d:\ufsm\disciplinas\logica e algoritmo\programas\gl_1_canvasglut\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"auxiliar.h"
+
+1595010751 d:\ufsm\disciplinas\logica e algoritmo\programas\gl_1_canvasglut\src\auxiliar.h
+
+1595010925 source:d:\ufsm\disciplinas\logica e algoritmo\programas\la_14_canvas2d_win\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1595010872 d:\ufsm\disciplinas\logica e algoritmo\programas\la_14_canvas2d_win\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1426372440 d:\ufsm\disciplinas\logica e algoritmo\programas\la_14_canvas2d_win\include\gl\glut.h
+	"freeglut_std.h"
+
+1437579942 d:\ufsm\disciplinas\logica e algoritmo\programas\la_14_canvas2d_win\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426372440 d:\ufsm\disciplinas\logica e algoritmo\programas\la_14_canvas2d_win\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1595874938 source:d:\ufsm\disciplinas\logica e algoritmo\programas\la_14_canvas2d_win\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"auxiliar.h"
+
+1595874226 d:\ufsm\disciplinas\logica e algoritmo\programas\la_14_canvas2d_win\src\auxiliar.h
+
+1595010925 source:d:\downloads\la\la_14_canvas2d_win\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1595010872 d:\downloads\la\la_14_canvas2d_win\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1426372440 d:\downloads\la\la_14_canvas2d_win\include\gl\glut.h
+	"freeglut_std.h"
+
+1437579942 d:\downloads\la\la_14_canvas2d_win\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426372440 d:\downloads\la\la_14_canvas2d_win\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1595874938 source:d:\downloads\la\la_14_canvas2d_win\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"auxiliar.h"
+
+1595874226 d:\downloads\la\la_14_canvas2d_win\src\auxiliar.h
+
+1595010925 source:d:\documentos\github\candy-crush-canvas2d\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1595010872 d:\documentos\github\candy-crush-canvas2d\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1426372440 d:\documentos\github\candy-crush-canvas2d\include\gl\glut.h
+	"freeglut_std.h"
+
+1437579942 d:\documentos\github\candy-crush-canvas2d\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426372440 d:\documentos\github\candy-crush-canvas2d\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1641172604 source:d:\documentos\github\candy-crush-canvas2d\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"auxiliar.h"
+
+1641171413 d:\documentos\github\candy-crush-canvas2d\src\auxiliar.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+
+1595010925 source:d:\documentos\github\quadtree\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1595010872 d:\documentos\github\quadtree\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1426372440 d:\documentos\github\quadtree\include\gl\glut.h
+	"freeglut_std.h"
+
+1437579942 d:\documentos\github\quadtree\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426372440 d:\documentos\github\quadtree\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1641469256 source:d:\documentos\github\quadtree\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"rectangle.h"
+	"point.h"
+	"quadtree.h"
+
+1641340821 d:\documentos\github\quadtree\src\auxiliar.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+
+1641342631 source:d:\documentos\github\quadtree\src\quadtree.cpp
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+
+1641344862 source:d:\documentos\github\quadtree\src\point.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+	"point.h"
+
+1641341131 source:d:\documentos\github\quadtree\src\rectangle.cpp
+
+1641469163 d:\documentos\github\quadtree\src\rectangle.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1641401910 d:\documentos\github\quadtree\src\point.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1641469384 d:\documentos\github\quadtree\src\quadtree.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1641571439 source:c:\users\maure\documents\github\quadtree\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1641571439 c:\users\maure\documents\github\quadtree\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1641571439 c:\users\maure\documents\github\quadtree\include\gl\glut.h
+	"freeglut_std.h"
+
+1641571439 c:\users\maure\documents\github\quadtree\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1641571439 c:\users\maure\documents\github\quadtree\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1641577149 source:c:\users\maure\documents\github\quadtree\src\point.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+	"point.h"
+
+1641916362 c:\users\maure\documents\github\quadtree\src\point.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1641830394 source:c:\users\maure\documents\github\quadtree\src\rectangle.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+	"point.h"
+	"rectangle.h"
+
+1641921449 source:c:\users\maure\documents\github\quadtree\src\quadtree.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+	"point.h"
+	"quadtree.h"
+
+1641920619 source:c:\users\maure\documents\github\quadtree\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"gl_canvas2d.h"
+	"rectangle.h"
+	"point.h"
+	"quadtree.h"
+
+1641917568 c:\users\maure\documents\github\quadtree\src\rectangle.h
+	<GL/glut.h>
+
+1641929139 c:\users\maure\documents\github\quadtree\src\quadtree.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"point.h"
+
+1641571439 source:c:\users\maure\documents\mergesort\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1641571439 c:\users\maure\documents\mergesort\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1641571439 c:\users\maure\documents\mergesort\include\gl\glut.h
+	"freeglut_std.h"
+
+1641571439 c:\users\maure\documents\mergesort\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1641571439 c:\users\maure\documents\mergesort\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1642512017 source:c:\users\maure\documents\mergesort\src\mergesort.cpp
+
+1642513656 source:c:\users\maure\documents\mergesort\src\circles.cpp
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"mergesort.h"
+	"circles.h"
+
+1642514019 source:c:\users\maure\documents\mergesort\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"gl_canvas2d.h"
+	"mergesort.h"
+
+1642512221 c:\users\maure\documents\mergesort\src\mergesort.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+
+1642514253 c:\users\maure\documents\mergesort\src\circles.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+
+1641571439 source:d:\downloads\mergesort\mergesort\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1641571439 d:\downloads\mergesort\mergesort\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1641571439 d:\downloads\mergesort\mergesort\include\gl\glut.h
+	"freeglut_std.h"
+
+1641571439 d:\downloads\mergesort\mergesort\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1641571439 d:\downloads\mergesort\mergesort\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1642601727 source:d:\downloads\mergesort\mergesort\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<iostream>
+	<math.h>
+	"gl_canvas2d.h"
+	"mergesort.h"
+	"circles.h"
+
+1642512221 d:\downloads\mergesort\mergesort\src\mergesort.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+
+1642512017 source:d:\downloads\mergesort\mergesort\src\mergesort.cpp
+
+1642570541 source:d:\downloads\mergesort\mergesort\src\circles.cpp
+	<stdio.h>
+	<stdlib.h>
+	"gl_canvas2d.h"
+	"circles.h"
+
+1642570048 d:\downloads\mergesort\mergesort\src\circles.h
+	<stdio.h>
+	<stdlib.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+
