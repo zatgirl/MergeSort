@@ -17,6 +17,8 @@
 #include <GL/freeglut_ext.h> //callback da wheel do mouse.
 
 #include <iostream>
+#include <cstdlib>
+#include <cstdio>
 #include <math.h>
 
 #include "gl_canvas2d.h"
@@ -32,20 +34,16 @@ using namespace std;
 
 void render()
 {
-    //Desenha círculos
-    if(keyPress != (109)){
+    //Drawing circles
+    if(keyPress != 109){
         CV::color(1,0,0);
-        CV::text(9,500, "Desenhe os circulos:");
-        while(true){
+        CV::text(9,500, "Desenhe os circulos: (Aperte D a cada novo círculo");
+        if(keyPress == 101){
             CV::circleFill(posMouseX, posMouseY, calcRadius(posMouseX, posMouseY, posMouseXfim, posMouseYfim), 20);
             saveCircle(posMouseX,posMouseY,calcRadius(posMouseX, posMouseY, posMouseXfim, posMouseYfim));
-            if (keyPress == 109){
-                break;
-            }
-            desenhos++;
         }
     }
-    //Exibe circulos(raios)
+    //Display circles (radius)
     if(keyPress == 109){
         CV::color(1,0,0);
         CV::text(20,500, "Raio dos circulos desenhados:");
@@ -58,20 +56,20 @@ void render()
 //funcao chamada toda vez que uma tecla for pressionada
 void keyboard(int key)
 {
-   printf("\nTecla: %d", key);
+   //printf("\nTecla: %d", key);
    keyPress = key;
 }
 //funcao chamada toda vez que uma tecla for liberada
 void keyboardUp(int key)
 {
-   printf("\nLiberou tecla: %d" , key);
+   //printf("\nLiberou tecla: %d" , key);
 }
 
 
 //funcao para tratamento de mouse: cliques, movimentos e arrastos
 void mouse(int button, int state, int wheel, int direction, int x, int y)
 {
-   printf("\nmouse %d %d %d %d %d %d", button, state, wheel, direction,  x, y);
+   //printf("\nmouse %d %d %d %d %d %d", button, state, wheel, direction,  x, y);
     if (state == 0){
         posMouseX = x;
         posMouseY = y;

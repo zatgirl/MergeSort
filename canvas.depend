@@ -505,3 +505,68 @@
 	<GL/freeglut_ext.h>
 	"gl_canvas2d.h"
 
+1641571439 source:c:\users\maure\documents\github\mergesort\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	<GL/glut.h>
+
+1641571439 c:\users\maure\documents\github\mergesort\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+
+1641571439 c:\users\maure\documents\github\mergesort\include\gl\glut.h
+	"freeglut_std.h"
+
+1641571439 c:\users\maure\documents\github\mergesort\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1641571439 c:\users\maure\documents\github\mergesort\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1642607609 source:c:\users\maure\documents\github\mergesort\src\main.cpp
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	<iostream>
+	<math.h>
+	"gl_canvas2d.h"
+	"mergesort.h"
+	"circles.h"
+
+1642611085 c:\users\maure\documents\github\mergesort\src\mergesort.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+
+1642618794 c:\users\maure\documents\github\mergesort\src\circles.h
+	<GL/glut.h>
+	<GL/freeglut_ext.h>
+	"gl_canvas2d.h"
+
+1642611085 source:c:\users\maure\documents\github\mergesort\src\mergesort.cpp
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<cmath>
+	"gl_canvas2d.h"
+	"circles.h"
+
+1642618819 source:c:\users\maure\documents\github\mergesort\src\circles.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cmath>
+	<cstring>
+	"gl_canvas2d.h"
+	"circles.h"
+
