@@ -19,12 +19,14 @@ void saveCircle(int x, int y, float radius){
     iCircle ++;
 }
 
-void drawCircle(){
+void drawCircle(int x, int y, int pos){
+    printf("-%d, %d, %d\n", x, y, pos); //debug
     char* temp = (char*)malloc(10);
-    CV::color(0,0,0);
-    for(int i = 0; i < iCircle; i ++){
-        CV::circleFill(circ[i].x, circ[i].y, circ[i].radius, 20);
-        std::to_string(circ[i].radius);
-        CV::text(circ[i].x, circ[i].y, temp);
-    }
+    CV::color(0,0,1);
+    //for(int i = 0; i < iCircle; i ++){
+        CV::circleFill(x, y, 10, 20);
+        std::sprintf(temp, "%.5f", circ[pos].radius);
+        CV::color(0,0,0);
+        CV::text(x, y, temp);
+    //}
 }

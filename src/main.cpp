@@ -28,7 +28,8 @@
 //variaveis globais
 int screenWidth = 512, screenHeight = 512; //largura e altura inicial da tela. Alteram com o redimensionamento de tela.
 int posMouseXfim = 0, posMouseYfim = 0, stateMouse;
-int posMouseX, posMouseY, keyPress, desenhos;
+int posMouseXini, posMouseYini, keyPress, desenhos;
+int posCircleX = 100, posCircleY = 100;
 
 using namespace std;
 
@@ -37,18 +38,34 @@ void render()
     //Drawing circles
     if(keyPress != 109){
         CV::color(1,0,0);
-        CV::text(9,500, "Desenhe os circulos: (Aperte D a cada novo círculo");
-        if(keyPress == 101){
-            CV::circleFill(posMouseX, posMouseY, calcRadius(posMouseX, posMouseY, posMouseXfim, posMouseYfim), 20);
-            saveCircle(posMouseX,posMouseY,calcRadius(posMouseX, posMouseY, posMouseXfim, posMouseYfim));
+        CV::text(9,500, "Desenhe os circulos: (Aperte D a cada novo círculo desenhado");
+        if (stateMouse == -2){
+            CV::color(1,0,1);
+            CV::circleFill(posMouseXini, posMouseYini, calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim), 20);
+            CV::color(0,0,0);
+            sprintf(temp, "%.5f", calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim));
+            CV::text(posMouseXini, posMouseYini, temp);
+            if(keyPress == 101){
+                saveCircle(posMouseXini,posMouseYini,calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim));
+                printf(" cont %d\n", iCircle); //debug
+            }
         }
     }
+    /*if(keyPress != 109){
+        CV::text(9,500, "Desenhe os circulos: (Aperte D a cada novo círculo");
+        if(keyPress == 101){
+            CV::circleFill(posMouseXini, posMouseYini, calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim), 20);
+            saveCircle(posMouseXini,posMouseYini,calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim));
+        }
+    }*/
     //Display circles (radius)
     if(keyPress == 109){
-        CV::color(1,0,0);
-        CV::text(20,500, "Raio dos circulos desenhados:");
-        CV::color(0,1,0);
-        drawCircle();
+        CV::text(20,500, "Raio dos circulos desenhados:(Pixels)");
+        for(int pos = 0; pos < iCircle; pos++){
+            posCircleX += posCircleX;
+            drawCircle(posCircleX, posCircleY, pos);
+            printf("-- %d, %d, %d\n",posCircleX, posCircleY, pos); //debug
+        }
     }
 
 }
@@ -71,8 +88,8 @@ void mouse(int button, int state, int wheel, int direction, int x, int y)
 {
    //printf("\nmouse %d %d %d %d %d %d", button, state, wheel, direction,  x, y);
     if (state == 0){
-        posMouseX = x;
-        posMouseY = y;
+        posMouseXini = x;
+        posMouseYini = y;
     }
     if (state == 1){
         posMouseXfim = x;
