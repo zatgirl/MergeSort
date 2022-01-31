@@ -26,60 +26,71 @@
 #include "circles.h"
 
 //variaveis globais
-int screenWidth = 512, screenHeight = 512; //largura e altura inicial da tela. Alteram com o redimensionamento de tela.
+int screenWidth = 650, screenHeight = 836; //largura e altura inicial da tela. Alteram com o redimensionamento de tela.
 int posMouseXfim = 0, posMouseYfim = 0, stateMouse;
 int posMouseXini, posMouseYini, keyPress, desenhos;
-int posCircleX = 100, posCircleY = 100;
-
 using namespace std;
 
 void render()
 {
-    //Drawing circles
-    if(keyPress != 109){
+    switch (keyPress){
+    case 0:
         CV::color(1,0,0);
-        CV::text(9,500, "Desenhe os circulos: (Aperte D a cada novo círculo desenhado");
-        if (stateMouse == -2){
+        CV::text(9,820, "Desenhe os circulos: (Aperte D para salvar o circulo desenhado)");
+        CV::text(9,795, "ou E para exibir os circulos apos desenhar!");
+        if (stateMouse == -2)
+        {
             CV::color(1,0,1);
             CV::circleFill(posMouseXini, posMouseYini, calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim), 20);
             CV::color(0,0,0);
-            sprintf(temp, "%.5f", calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim));
-            CV::text(posMouseXini, posMouseYini, temp);
-            if(keyPress == 101){
-                saveCircle(posMouseXini,posMouseYini,calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim));
-                printf(" cont %d\n", iCircle); //debug
-            }
+            sprintf(tempFtoChar, "%.5f", calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim));
+            CV::text(posMouseXini, posMouseYini, tempFtoChar);
         }
+        break;
+    case 100:
+        CV::color(1,0,0);
+        CV::text(9,820, "Desenhe os circulos: (Aperte D para salvar o circulo desenhado)");
+        CV::text(9,795, "ou E para exibir os circulos apos desenhar!");
+        saveCircle(posMouseXini,posMouseYini,calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim));
+        keyPress = 0;
+        break;
+    case 109:
+        //Display MergeSort step by step
+        CV::text(20,820, "Raio dos circulos desenhados:(Pixels)");
+        drawCircle();
+        CV::text(20,700, "Ordenacao MergeSort:");
+        //callMerge();
+        break;
     }
-    /*if(keyPress != 109){
-        CV::text(9,500, "Desenhe os circulos: (Aperte D a cada novo círculo");
-        if(keyPress == 101){
-            CV::circleFill(posMouseXini, posMouseYini, calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim), 20);
-            saveCircle(posMouseXini,posMouseYini,calcRadius(posMouseXini, posMouseYini, posMouseXfim, posMouseYfim));
-        }
-    }*/
-    //Display circles (radius)
-    if(keyPress == 109){
-        CV::text(20,500, "Raio dos circulos desenhados:(Pixels)");
-        for(int pos = 0; pos < iCircle; pos++){
-            posCircleX += posCircleX;
-            drawCircle(posCircleX, posCircleY, pos);
-            printf("-- %d, %d, %d\n",posCircleX, posCircleY, pos); //debug
-        }
-    }
-
 }
+
+/*FGAPI int     FGAPIENTRY glutCreateWindow( const char* title );
+FGAPI int     FGAPIENTRY glutCreateSubWindow( int window, int x, int y, int width, int height );
+FGAPI void    FGAPIENTRY glutDestroyWindow( int window );
+FGAPI void    FGAPIENTRY glutSetWindow( int window );
+FGAPI int     FGAPIENTRY glutGetWindow( void );
+FGAPI void    FGAPIENTRY glutSetWindowTitle( const char* title );
+FGAPI void    FGAPIENTRY glutSetIconTitle( const char* title );
+FGAPI void    FGAPIENTRY glutReshapeWindow( int width, int height );
+FGAPI void    FGAPIENTRY glutPositionWindow( int x, int y );
+FGAPI void    FGAPIENTRY glutShowWindow( void );
+FGAPI void    FGAPIENTRY glutHideWindow( void );
+FGAPI void    FGAPIENTRY glutIconifyWindow( void );
+FGAPI void    FGAPIENTRY glutPushWindow( void );
+FGAPI void    FGAPIENTRY glutPopWindow( void );
+FGAPI void    FGAPIENTRY glutFullScreen( void );
+*/
 
 //funcao chamada toda vez que uma tecla for pressionada
 void keyboard(int key)
 {
-   //printf("\nTecla: %d", key);
-   keyPress = key;
+   printf("\nTecla: %d", key);
 }
 //funcao chamada toda vez que uma tecla for liberada
 void keyboardUp(int key)
 {
    //printf("\nLiberou tecla: %d" , key);
+   keyPress = key;
 }
 
 

@@ -3,23 +3,28 @@
 #include <GL/glut.h>
 #include <GL/freeglut_ext.h>
 #include "gl_canvas2d.h"
-#define screen 512
+#define screen 650
 
-static int iCircle = 0;
+static int iCircle = 0, betweenRadius = 60, betweenCircles = 90;
+
 static int xMax = screen;
 static int yMax = screen;
 
-static char* temp = (char*)malloc(10);
+static char* tempFtoChar = (char*)malloc(5);
 static char* temp2 = (char*)malloc(10);
 
-typedef struct{
+struct Circle
+{
     int x;
     int y;
     float radius;
-} Circle;
+    int r, g, b;
+};
+extern struct Circle circ[50];
 
 float calcRadius(int xini, int yini, int xfim, int yfim);
 void saveCircle(int x, int y, float radius);
-void drawCircle(int x, int y, int pos);
+void drawCircle();
+//void callMerge()
 
 #endif // __C_H__

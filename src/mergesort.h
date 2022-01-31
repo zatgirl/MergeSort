@@ -5,8 +5,8 @@
 #include "gl_canvas2d.h"
 
 
-void Juntar(int vetor[], int ini, int meio, int fim, int vetAux[]);
-void MergeSort(int vetor[], int inicio, int fim, int vetorAux[]);
-void MergeSort(int vetor[], int tamanho);
+void Juntar(float vetor[], int ini, int meio, int fim, int vetAux[]);
+void MergeSort(float vetor[], int inicio, int fim, int vetorAux[]);
+void MergeSort(float vetor[], int tamanho);
 
 #endif // __AUXILIAR_H__

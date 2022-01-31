@@ -5,7 +5,7 @@
 #include "gl_canvas2d.h"
 #include "circles.h"
 
- void Juntar(int vetor[], int ini, int meio, int fim, int vetAux[]) {
+ void Juntar(float vetor[], int ini, int meio, int fim, int vetAux[]) {
     int esq = ini;
     int dir = meio;
     for (int i = ini; i < fim; ++i) {
@@ -24,7 +24,7 @@
     }
 }
 
-void MergeSort(int vetor[], int inicio, int fim, int vetorAux[]) {
+void MergeSort(float vetor[], int inicio, int fim, int vetorAux[]) {
     if ((fim - inicio) < 2) return;
 
     int meio = ((inicio + fim)/2);
@@ -33,7 +33,7 @@ void MergeSort(int vetor[], int inicio, int fim, int vetorAux[]) {
     Juntar(vetor, inicio, meio, fim, vetorAux);
 }
 
-void MergeSort(int vetor[], int tamanho) { //funÃ§Ã£o que o usuario realmente chama
+void MergeSort(float vetor[], int tamanho) { //função que o usuario realmente chama
     //criando vetor auxiliar
     int vetorAux[tamanho];
     MergeSort(vetor, 0, tamanho, vetorAux);
